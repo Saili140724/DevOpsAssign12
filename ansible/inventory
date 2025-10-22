@@ -1,0 +1,11 @@
+[manager]
+<manager_ip> ansible_host=54.226.195.81
+
+[workers]
+<worker_a_ip> ansible_host=3.90.0.90
+<worker_b_ip> ansible_host=98.93.94.254
+
+[all:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/mnt/c/Users/Admin/Documents/DevOpsAssign12/terraform/terraform-key.pem
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
