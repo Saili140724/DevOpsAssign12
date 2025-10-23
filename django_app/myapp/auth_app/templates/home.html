@@ -1,2 +1,60 @@
-Hello {{ username }} How are you
-<a href="{% url 'logout' %}">Logout</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #ddf639, #eaafc8);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: #fff;
+            padding: 50px 60px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        h1 {
+            color: #6a11cb;
+            font-size: 28px;
+        }
+        p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #6a11cb;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4a0fa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello <span style="color:#6a11cb;">{{ username }}</span></h1>
+        <p>How are you?</p>
+        <p>Welcome to the DevOps Assignment Dashboard</p>
+
+        <form method="POST" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
