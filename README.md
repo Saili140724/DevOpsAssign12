@@ -1,5 +1,11 @@
 # DevOps Assignment - ITA716
+Terraform Deployment Results for ITA716
 
+Manager (Jenkins / Controller): 54.83.123.148
+
+Worker A: 54.242.116.140
+
+Worker B: 54.87.220.102
 
 Register Page – Create a new account.
 <img width="1917" height="965" alt="Screenshot 2025-10-23 081612" src="https://github.com/user-attachments/assets/f6292834-a8e3-4569-aa23-0211311c899d" />
