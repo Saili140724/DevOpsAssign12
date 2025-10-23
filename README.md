@@ -40,12 +40,5 @@ Home Page – Display username dynamically and welcome message.
 <img width="1916" height="971" alt="Screenshot 2025-10-23 081733" src="https://github.com/user-attachments/assets/83371e6f-7071-44f0-b2ec-722950a8781a" />
 
 
-About
-Django-based DevOps Assignment for ITA716 demonstrating:
-
-Basic web app development with authentication
-
-Template rendering with dynamic data
-
 
 
